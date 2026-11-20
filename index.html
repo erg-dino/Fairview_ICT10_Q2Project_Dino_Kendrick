@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello!</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(86, 74, 215);
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(86, 74, 215);
+   color: white;
+   text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 100px;
+}
+</style>
+  <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">About me</a></li>
+  <li><a href="drill2.html">Drill 2</a></li>
+  <li><a href="Seatwork1.html">Seatwork 1</a></li>
+  <li><a href="Skillstest.html">Skills Test</a></li>
+</ul>
+
+<h2 style="font-family: Arial; font-size: 40px; text-align: center;">Hello!</h2>
+
+<div class="card">
+  <img src="profile.JPG" alt="Avatar" style="width: 500px; height: 550px;">
+  <div class="container">
+    <h4 style="text-align: center;"><b>Kendrick Dino</b></h4>
+    <h4 style="text-align: center;" id="gsectionINDEX"></h4>
+    <h4 style="text-align: center;" id="campusINDEX"></h4>
+    <h4 style="text-align: center;" id="hobbies"></h4>
+    <h4 style="text-align: center;" id="band"></h4>
+  </div>
+</div>
+<br><br>
+
+
+
+<div class="footer">
+  <p>Kendrick Dino 2026 OBMC Fairview <a href="https://docs.google.com/document/d/1oxGNk-PYYQKvAd-q3yz9sQ48tpv9vnI0rQoZbHN0eJQ/edit?usp=sharing">Click here for references.</a></p>
+</div>
+<script type="py" src="main.py"></script>
+
+</body>
+</html>
