@@ -1,14 +1,17 @@
 from pyscript import document, display
 
+# credit to Claude ai for helping me troubleshoot the ValueError (AI used with consent given by maam!!!)
+
 campusINDEX = "fairview"
 gsectionINDEX = "10-Emerald"
 hobbies = "guitar"
 band = "Irrevocable"
 
-display(f"Campus: {campusINDEX}", target="campusINDEX")
-display(f"Section: {gsectionINDEX}", target="gsectionINDEX")
-display(f"Hobbies: {hobbies}", target="hobbies")
-display(f"Favorite Band: {band}", target="band")
+if document.getElementById("campusINDEX"):
+    display(f"Campus: {campusINDEX}", target="campusINDEX")
+    display(f"Section: {gsectionINDEX}", target="gsectionINDEX")
+    display(f"Hobbies: {hobbies}", target="hobbies")
+    display(f"Favorite Band: {band}", target="band")
 
 
 # SEATWORK 1 CODE START
@@ -91,8 +94,9 @@ Gradeseven = {"Et al De La Pena"}
 all_membersD2 = Gradeten | Gradenine | Gradeeight | Gradeseven
 
 members_listD2 = "<br>".join(sorted(all_membersD2))
-display(members_listD2, target="listfull")
-display(f"TOTAL MEMBERS: {len(all_membersD2)}", target="totalD2")
+if document.getElementById("listfull"):
+    display(members_listD2, target="listfull")
+    display(f"TOTAL MEMBERS: {len(all_membersD2)}", target="totalD2")
 
 
 def add_member(e):
